@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#40FF4455"
+    app:barrierMargin="5dp"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="15dp"
+    app:layoutDescription="@integer/material_motion_duration_long_1"
+    app:layout_keyline="@integer/material_motion_duration_long_1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/recId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/_5"
+            android:textStyle="italic"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="@string/des"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            app:layout_constraintStart_toEndOf="@id/recImage"
+            app:layout_constraintTop_toBottomOf="@id/recTittle"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/recTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/tittle"
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/recImage"
+            app:layout_constraintTop_toTopOf="@id/recImage" />
+
+        <ImageView
+            android:id="@+id/recImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            android:layout_margin="5dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/imageRes" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
